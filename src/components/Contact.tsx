@@ -32,62 +32,9 @@ const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-12">
+          
           {/* Contact Information */}
           <div className="lg:col-span-1 space-y-8">
-            <div>
-              <h3 className="text-2xl font-bold mb-6 text-navy">Contact Information</h3>
-              
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    <Phone className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Phone Numbers</h4>
-                    <p className="text-muted-foreground">+971-4-XXX-XXXX</p>
-                    <p className="text-muted-foreground">+971-50-XXX-XXXX</p>
-                    <p className="text-xs text-success-green mt-1">Available 24/7</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    <Mail className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Email Address</h4>
-                    <p className="text-muted-foreground">info@ummah-attestation.com</p>
-                    <p className="text-muted-foreground">support@ummah-attestation.com</p>
-                    <p className="text-xs text-success-green mt-1">Response within 1 hour</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    <MessageCircle className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">WhatsApp</h4>
-                    <p className="text-muted-foreground">+971-50-XXX-XXXX</p>
-                    <p className="text-xs text-success-green mt-1">Instant support</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    <MapPin className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Office Address</h4>
-                    <p className="text-muted-foreground">
-                      Business Bay, Dubai<br />
-                      United Arab Emirates
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Business Hours */}
             <Card className="border-primary/20">
               <CardHeader>
@@ -116,6 +63,62 @@ const Contact = () => {
                 </div>
               </CardContent>
             </Card>
+
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-navy">Contact Information</h3>
+              
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-primary/10 rounded-lg">
+                    <Phone className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Phone Numbers</h4>
+                    <a href="tel:+919652395028" className="text-muted-foreground">+91 9652395028</a>
+                    <div></div>
+                    <a href="tel:+919849720295" className="text-muted-foreground">+91 9849720295</a>
+                    <p className="text-xs text-success-green mt-1">Available 24/7</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-primary/10 rounded-lg">
+                    <Mail className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Email Address</h4>
+                    <a href="mailto:xyz@gmail.com" className="text-muted-foreground">ummah.attestation@gmail.com</a>
+                    <p className="text-xs text-success-green mt-1">Response within 1 hour</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-primary/10 rounded-lg">
+                    <MessageCircle className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">WhatsApp</h4>
+                    <p className="text-muted-foreground">+91 9849720295</p>
+                    <p className="text-xs text-success-green mt-1">Instant support</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-primary/10 rounded-lg">
+                    <MapPin className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Office Address</h4>
+                    <p className="text-muted-foreground">
+                      <br />
+                      United Arab Emirates
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
 
             {/* Additional Services */}
             <div className="space-y-4">
@@ -154,13 +157,13 @@ const Contact = () => {
                   </div>
                   <div>
                     <label className="text-sm font-medium mb-2 block">Phone Number *</label>
-                    <Input placeholder="+971-XX-XXX-XXXX" />
+                    <Input placeholder="+91-XX-XXX-XXXX" />
                   </div>
                 </div>
 
                 <div>
                   <label className="text-sm font-medium mb-2 block">Email Address *</label>
-                  <Input type="email" placeholder="your.email@example.com" />
+                  <Input type="email" placeholder="your.email@gmail.com" />
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-4">
@@ -199,29 +202,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Urgency Level</label>
-                  <div className="grid grid-cols-3 gap-4">
-                    <Card className="cursor-pointer hover:shadow-sm transition-shadow">
-                      <CardContent className="p-4 text-center">
-                        <div className="text-success-green font-semibold">Standard</div>
-                        <div className="text-sm text-muted-foreground">3-4 days</div>
-                      </CardContent>
-                    </Card>
-                    <Card className="cursor-pointer hover:shadow-sm transition-shadow border-gold">
-                      <CardContent className="p-4 text-center">
-                        <div className="text-gold font-semibold">Express</div>
-                        <div className="text-sm text-muted-foreground">2-3 days</div>
-                      </CardContent>
-                    </Card>
-                    <Card className="cursor-pointer hover:shadow-sm transition-shadow border-destructive">
-                      <CardContent className="p-4 text-center">
-                        <div className="text-destructive font-semibold">Urgent</div>
-                        <div className="text-sm text-muted-foreground">1-2 days</div>
-                      </CardContent>
-                    </Card>
-                  </div>
                 </div>
-
                 <Button className="w-full" size="lg" variant="hero">
                   <Send className="h-5 w-5 mr-2" />
                   Send Quote Request
