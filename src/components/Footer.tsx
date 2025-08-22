@@ -20,21 +20,21 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="text-gold font-arabic text-2xl font-bold">الأمة</div>
+              <div className="text-gold font-arabic text-2xl font-bold"></div>
               <div>
                 <h3 className="text-xl font-bold">Ummah Attestation</h3>
                 <p className="text-white/80 text-sm">Trusted Document Services</p>
               </div>
             </div>
             <p className="text-white/80 mb-6">
-              UAE's most trusted certificate attestation service with 10+ years of experience. 
+              HYDERABAD's most trusted certificate attestation service with 10+ years of experience. 
               Professional, fast, and reliable document attestation services.
             </p>
             <div className="flex items-center gap-2 mb-4">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="h-4 w-4 text-gold fill-current" />
               ))}
-              <span className="text-sm text-white/80 ml-2">4.9/5 (500+ Reviews)</span>
+              <span className="text-sm text-white/80 ml-2">5/5 (500+ Reviews)</span>
             </div>
           </div>
 
@@ -69,43 +69,33 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6">Contact Info</h4>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <Phone className="h-5 w-5 text-gold mt-0.5" />
+                <Phone className="h-5 w-5 text-gold mt-3" />
                 <div>
-                  <p className="text-white/80">+971-4-XXX-XXXX</p>
-                  <p className="text-white/80">+971-50-XXX-XXXX</p>
+                  <a href="tel:+919849720295" className="text-white/80">+91 9849720295</a>
+                  <br />
+                  <a href="tel:+919652395028" className="text-white/80">+91 9652395028</a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-gold mt-0.5" />
                 <div>
-                  <p className="text-white/80">info@ummah-attestation.com</p>
+                  <p className="text-white/80">ummah.attestation@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-gold mt-0.5" />
+                <MapPin className="h-20 w-10 text-gold mt-0.5" />
                 <div>
-                  <p className="text-white/80">Business Bay, Dubai<br />United Arab Emirates</p>
+                  <p className="text-white/80">Hotel Anmol Continental, 5-9-20/A, Secretariat Rd, Saifabad, Khairtabad, Hyderabad <br />Telangana 500004</p>
+                  
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Clock className="h-5 w-5 text-gold mt-0.5" />
                 <div>
-                  <p className="text-white/80">Mon-Fri: 9:00 AM - 7:00 PM</p>
-                  <p className="text-white/80">Sat: 9:00 AM - 5:00 PM</p>
+                  <p className="text-white/80">Mon-Sat: 9:00 AM - 7:00 PM</p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Emergency Contact Section */}
-        <div className="mt-12 pt-8 border-t border-white/20">
-          <div className="bg-white/10 rounded-lg p-6 text-center">
-            <h4 className="text-xl font-semibold mb-2">Need Urgent Attestation?</h4>
-            <p className="text-white/80 mb-4">24/7 emergency services available for urgent document processing</p>
-            <Button variant="gold" size="lg">
-              Call Emergency Line: +971-50-XXX-XXXX
-            </Button>
           </div>
         </div>
 
@@ -115,13 +105,13 @@ const Footer = () => {
             <div className="flex items-center gap-6 mb-4 md:mb-0">
               <span className="text-white/80">Follow us:</span>
               <div className="flex gap-4">
-                <a href="#" className="text-white/80 hover:text-gold transition-colors">
+                <a href="https://www.facebook.com/p/Ummah-Attestation-100063835452250/" className="text-white/80 hover:text-gold transition-colors">
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a href="#" className="text-white/80 hover:text-gold transition-colors">
                   <Instagram className="h-5 w-5" />
                 </a>
-                <a href="#" className="text-white/80 hover:text-gold transition-colors">
+                <a href="https://www.linkedin.com/in/ummah-attestation-6044a987/" className="text-white/80 hover:text-gold transition-colors">
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a href="#" className="text-white/80 hover:text-gold transition-colors">
@@ -130,7 +120,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-center gap-4 text-white/80 text-sm">
-              <p>&copy; 2024 Ummah Attestation. All rights reserved.</p>
+              <p>&copy; 2025 Ummah Attestation. All rights reserved.</p>
               <div className="flex gap-4">
                 <a href="#" className="hover:text-gold transition-colors">Privacy Policy</a>
                 <a href="#" className="hover:text-gold transition-colors">Terms of Service</a>
