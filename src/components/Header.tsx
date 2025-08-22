@@ -10,7 +10,7 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2 text-muted-foreground">
               <Phone className="h-4 w-4" />
-              <span>+971-XXX-XXXX</span>
+              <a href="tel:+919652395028"><span>+91 9652395028</span></a>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <Mail className="h-4 w-4" />
@@ -18,21 +18,22 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <MapPin className="h-4 w-4" />
-              <span>Dubai, UAE</span>
+              <a href="https://maps.app.goo.gl/jAZnipPgXAhP52Df7" target="_blank"><span>Hyderabad, India</span></a>
             </div>
           </div>
-          <div className="text-success-green font-medium">
-            ⭐ 4.9/5 Google Reviews
-          </div>
+          <a href="https://www.google.com/search?client=firefox-b-d&sca_esv=ce44fb6aa5ce43e4&sxsrf=AE3TifOvTT8SQEXh6m0v5J3mAzuJ0IlBwQ:1755873260074&si=AMgyJEvkVjFQtirYNBhM3ZJIRTaSJ6PxY6y1_6WZHGInbzDnMTLbI-E3flUowGrt3gyqt9I9A3qptTc5BrIyAsG5-Y-WJYU6NvoE_Zuhdw_XzBFeGoyO-KCX5CECqXA4QyFLnuHwmntm65gEe3AasFLbmJvLevr6hg%3D%3D&q=Ummah+Attestation+Works+Reviews&sa=X&ved=2ahUKEwjwzb_P0Z6PAxUicGwGHbwEGqgQ0bkNegQIHxAD&biw=1485&bih=703&dpr=1.25"><div className="text-success-green font-medium">
+            ⭐ 5/5 Google Reviews
+          </div></a>
+          
         </div>
 
         {/* Main navigation */}
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center gap-3">
-            <div className="text-navy font-arabic text-2xl font-bold">الأمة</div>
+            {/* <div className="text-navy font-arabic text-2xl font-bold">الأمة</div> */}
             <div>
-              <h1 className="text-xl font-bold text-navy">Ummah Attestation</h1>
-              <p className="text-sm text-muted-foreground">Trusted Document Services</p>
+              <h1 className="text-xl font-bold text-black">Ummah Attestation</h1>
+              <p className="text-sm text-muted-foreground mt-1">Notary. Attestation. Apostille.</p>
             </div>
           </div>
 
@@ -54,7 +55,7 @@ const Header = () => {
             </a>
           </nav>
 
-          <Button variant="hero" size="lg">
+          <Button variant="hero" size="lg" className="invisible">
             Get Quote Now
           </Button>
         </div>
