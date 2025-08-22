@@ -14,9 +14,9 @@ import trustImage from "@/assets/trust-image.jpg";
 
 const WhyChooseUs = () => {
   const stats = [
-    { icon: <Star className="h-8 w-8 text-gold" />, number: "4.9/5", label: "Google Rating" },
-    { icon: <Users className="h-8 w-8 text-primary" />, number: "5000+", label: "Happy Customers" },
-    { icon: <Clock className="h-8 w-8 text-success-green" />, number: "2-3", label: "Days Processing" },
+    { icon: <Star className="h-8 w-8 text-gold" />, number: "5/5", label: "Google Rating" },
+    { icon: <Users className="h-8 w-8 text-primary" />, number: "10,000+", label: "Happy Customers" },
+    { icon: <Zap className="h-8 w-8 text-gold" />, number: "Best in Industry", label: "Fastest Processing" },
     { icon: <Award className="h-8 w-8 text-gold" />, number: "10+", label: "Years Experience" }
   ];
 
@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
     {
       icon: <Zap className="h-6 w-6 text-gold" />,
       title: "Lightning Fast Service",
-      description: "Complete attestation in 2-3 days compared to industry standard of 7-10 days"
+      description: "Best in Industry Delivery Time"
     },
     {
       icon: <Shield className="h-6 w-6 text-primary" />,
@@ -34,12 +34,12 @@ const WhyChooseUs = () => {
     {
       icon: <Star className="h-6 w-6 text-gold" />,
       title: "Highest Customer Satisfaction",
-      description: "4.9/5 star rating from 500+ Google reviews, highest in UAE attestation industry"
+      description: "5/5 star rating from 500+ Google reviews, highest in Hyderabad attestation industry."
     },
     {
       icon: <Users className="h-6 w-6 text-primary" />,
       title: "Expert Team",
-      description: "10+ years of experience with dedicated relationship managers for each client"
+      description: "10+ years of experience"
     },
     {
       icon: <CheckCircle className="h-6 w-6 text-success-green" />,
@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
     {
       icon: <TrendingUp className="h-6 w-6 text-gold" />,
       title: "Track Record",
-      description: "Successfully processed 50,000+ documents with 99.9% success rate"
+      description: "Successfully processed 50,000+ documents"
     }
   ];
 
@@ -61,12 +61,11 @@ const WhyChooseUs = () => {
             Why Choose Us
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-navy">
-            UAE's Most Trusted Name in
-            <span className="text-gold block">Document Attestation</span>
+            Why should you choose us?
+            {/* <span className="text-gold block">Document Attestation</span> */}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            When you choose Ummah Attestation, you're choosing speed, reliability, and excellence. 
-            Here's why thousands of customers trust us with their important documents.
+          At Ummah Attestation, we specialize in providing reliable and professional Notary and Embassy attestation services. With a team of highly experienced legal experts, we not only process your attestations with precision but also offer expert legal guidance to ensure all your requirements are met efficiently and accurately.
           </p>
         </div>
 
@@ -131,12 +130,12 @@ const WhyChooseUs = () => {
             <div className="bg-white/10 rounded-lg p-6">
               <CheckCircle className="h-8 w-8 text-gold mx-auto mb-3" />
               <h4 className="font-semibold mb-2">Success Guarantee</h4>
-              <p className="text-sm text-white/80">100% success rate or full refund</p>
+              <p className="text-sm text-white/80">100% success rate</p>
             </div>
             <div className="bg-white/10 rounded-lg p-6">
               <Clock className="h-8 w-8 text-gold mx-auto mb-3" />
-              <h4 className="font-semibold mb-2">Time Guarantee</h4>
-              <p className="text-sm text-white/80">On-time delivery or compensation</p>
+              <h4 className="font-semibold mb-2">Fastest Document Processing</h4>
+              <p className="text-sm text-white/80">Fastest Delivery Time in Industry</p>
             </div>
             <div className="bg-white/10 rounded-lg p-6">
               <Shield className="h-8 w-8 text-gold mx-auto mb-3" />
@@ -146,6 +145,7 @@ const WhyChooseUs = () => {
           </div>
         </div>
       </div>
+      {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.087874988576!2d78.4703767!3d17.40757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb975e90482797%3A0x1bb0d1151948a88e!2sUmmah%20Attestation%20Works!5e0!3m2!1sen!2sin!4v1755878658376!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
     </section>
   );
 };

@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Clock, 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
   MessageCircle,
   Send,
   Car,
@@ -26,13 +26,13 @@ const Contact = () => {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Contact us today for a free consultation and quote. Our experts are ready to help 
+            Contact us today for a free consultation and quote. Our experts are ready to help
             with all your document attestation needs.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-12">
-          
+
           {/* Contact Information */}
           <div className="lg:col-span-1 space-y-8">
             {/* Business Hours */}
@@ -66,7 +66,7 @@ const Contact = () => {
 
             <div>
               <h3 className="text-2xl font-bold mb-6 text-navy">Contact Information</h3>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-primary/10 rounded-lg">
@@ -110,15 +110,23 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Office Address</h4>
                     <p className="text-muted-foreground">
-                      <br />
-                      United Arab Emirates
+                      Hotel Anmol Continental, 5-9-20/A, Secretariat Rd, Saifabad, Khairtabad, Hyderabad, Telangana 500004
                     </p>
                   </div>
                 </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.087874988576!2d78.4703767!3d17.40757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb975e90482797%3A0x1bb0d1151948a88e!2sUmmah%20Attestation%20Works!5e0!3m2!1sen!2sin!4v1755878715799!5m2!1sen!2sin"
+                  width="400"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </div>
 
-            
+
 
             {/* Additional Services */}
             <div className="space-y-4">
@@ -195,7 +203,7 @@ const Contact = () => {
 
                 <div>
                   <label className="text-sm font-medium mb-2 block">Document Details</label>
-                  <Textarea 
+                  <Textarea
                     placeholder="Please describe the documents you need attested (e.g., Degree certificate from XYZ University, Birth certificate, etc.)"
                     rows={4}
                   />
