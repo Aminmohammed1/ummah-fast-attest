@@ -46,9 +46,9 @@ const Services = () => {
     },
     {
       icon: <Users className="h-8 w-8 text-primary" />,
-      title: "Family Visa Documents",
-      description: "Complete family visa documentation and attestation services.",
-      features: ["Family Visa Papers", "Relationship Proof", "Income Certificates", "Housing Documents"]
+      title: "Miscellaneous Services",
+      description: "Miscellaneous services like Drafting, Translation... etc",
+      features: ["Free Legal Advisory For MEA, HRD, GAD", "All other types of Attestations", "embassy related services" ]
     }
   ];
 
