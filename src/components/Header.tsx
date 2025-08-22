@@ -14,7 +14,7 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <Mail className="h-4 w-4" />
-              <span>info@ummah-attestation.com</span>
+              <a href="mailto:ummah.attestation@gmail.com" className="text-muted-foreground">ummah.attestation@gmail.com</a>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <MapPin className="h-4 w-4" />

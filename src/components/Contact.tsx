@@ -83,7 +83,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Email Address</h4>
-                    <a href="mailto:xyz@gmail.com" className="text-muted-foreground">ummah.attestation@gmail.com</a>
+                    <a href="mailto:ummah.attestation@gmail.com" className="text-muted-foreground">ummah.attestation@gmail.com</a>
                     <p className="text-xs text-success-green mt-1">Response within 1 hour</p>
                   </div>
                 </div>
@@ -121,27 +121,6 @@ const Contact = () => {
                 />
               </div>
             </div>
-
-
-
-            {/* Additional Services */}
-            <div className="space-y-4">
-              <h4 className="font-semibold text-navy">Additional Services</h4>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2">
-                  <Car className="h-4 w-4 text-primary" />
-                  <span className="text-sm">Free pickup & delivery in Dubai</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Building className="h-4 w-4 text-primary" />
-                  <span className="text-sm">Corporate consultation services</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <MessageCircle className="h-4 w-4 text-primary" />
-                  <span className="text-sm">Real-time status updates</span>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Contact Form */}
@@ -166,7 +145,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Email Address *</label>
+                  <label className="text-sm font-medium mb-2 block">Email Address </label>
                   <Input type="email" placeholder="your.email@gmail.com" />
                 </div>
 
@@ -209,12 +188,12 @@ const Contact = () => {
                 </div>
                 <Button className="w-full" size="lg" variant="hero">
                   <Send className="h-5 w-5 mr-2" />
-                  Send Quote Request
+                  Send Request
                 </Button>
 
                 <p className="text-sm text-muted-foreground text-center">
                   By submitting this form, you agree to our terms of service and privacy policy.
-                  We'll contact you within 1 hour with a detailed quote.
+                  We'll contact you within 1 hour.
                 </p>
               </CardContent>
             </Card>
