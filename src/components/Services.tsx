@@ -17,50 +17,38 @@ const Services = () => {
     {
       icon: <GraduationCap className="h-8 w-8 text-primary" />,
       title: "Educational Certificates",
-      description: "Degree, diploma, transcripts attestation for UAE, Saudi Arabia, Qatar, and other GCC countries.",
-      features: ["University Degrees", "School Certificates", "Transcripts", "Professional Courses"],
-      processingTime: "2-3 Days",
-      price: "Starting from AED 150"
+      description: "Degree, Diploma, Transcripts Attestation Apostille for UAE, Saudi Arabia, Qatar, and other GCC countries.",
+      features: ["University Degrees", "School Certificates", "Transcripts", "work experience letters"]
     },
     {
       icon: <FileText className="h-8 w-8 text-primary" />,
       title: "Personal Documents",
       description: "Birth certificates, marriage certificates, and other personal document attestation.",
-      features: ["Birth Certificates", "Marriage Certificates", "Death Certificates", "Passport Copies"],
-      processingTime: "2-3 Days",
-      price: "Starting from AED 120"
+      features: ["Birth Certificates", "Marriage Certificates", "Death Certificates", "Passport Copies"]
     },
     {
       icon: <Briefcase className="h-8 w-8 text-primary" />,
       title: "Commercial Documents",
       description: "Business registration, MOA, power of attorney and commercial document attestation.",
-      features: ["Trade License", "MOA & AOA", "Power of Attorney", "Commercial Invoices"],
-      processingTime: "3-4 Days",
-      price: "Starting from AED 200"
+      features: ["Trade License", "MOA & AOA", "Power of Attorney", "Commercial Invoices"]
     },
     {
       icon: <Heart className="h-8 w-8 text-primary" />,
       title: "Medical Certificates",
       description: "Medical fitness, vaccination certificates and health document attestation.",
-      features: ["Medical Fitness", "Vaccination Records", "Medical Reports", "Health Certificates"],
-      processingTime: "2-3 Days",
-      price: "Starting from AED 130"
+      features: ["Medical Fitness", "Vaccination Records", "Medical Reports", "Health Certificates"]
     },
     {
       icon: <Building className="h-8 w-8 text-primary" />,
       title: "Embassy Attestation",
       description: "Complete embassy attestation services for all GCC and international destinations.",
-      features: ["UAE Embassy", "Saudi Embassy", "Qatar Embassy", "Other Embassies"],
-      processingTime: "5-7 Days",
-      price: "Starting from AED 300"
+      features: ["UAE Embassy", "Saudi Embassy", "Qatar Embassy", "Other Embassies"]
     },
     {
       icon: <Users className="h-8 w-8 text-primary" />,
       title: "Family Visa Documents",
       description: "Complete family visa documentation and attestation services.",
-      features: ["Family Visa Papers", "Relationship Proof", "Income Certificates", "Housing Documents"],
-      processingTime: "3-4 Days",
-      price: "Starting from AED 180"
+      features: ["Family Visa Papers", "Relationship Proof", "Income Certificates", "Housing Documents"]
     }
   ];
 
@@ -75,8 +63,8 @@ const Services = () => {
             Complete Attestation Solutions
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Professional document attestation services covering all types of certificates 
-            with the fastest processing time in UAE.
+            Professional and Trusted document attestation services covering all types of certificates 
+            with the fastest processing time in <b>HYDERABAD</b>.
           </p>
         </div>
 
@@ -99,20 +87,6 @@ const Services = () => {
                     </div>
                   ))}
                 </div>
-                
-                <div className="flex items-center justify-between pt-4 border-t border-border">
-                  <div className="flex items-center gap-2">
-                    <Clock className="h-4 w-4 text-primary" />
-                    <span className="text-sm font-medium">{service.processingTime}</span>
-                  </div>
-                  <Badge variant="secondary" className="bg-gold/20 text-gold">
-                    {service.price}
-                  </Badge>
-                </div>
-
-                <Button className="w-full" variant="outline">
-                  Get Quote
-                </Button>
               </CardContent>
             </Card>
           ))}
