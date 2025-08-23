@@ -27,7 +27,7 @@ const Hero = () => {
             </Badge></a>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <Award className="h-4 w-4 mr-1 text-gold" />
-              10+ Years Experience
+              19+ Years Experience
             </Badge>
           </div>
 

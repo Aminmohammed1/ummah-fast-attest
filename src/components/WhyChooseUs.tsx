@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
     {
       icon: <Users className="h-6 w-6 text-primary" />,
       title: "Expert Team",
-      description: "10+ years of experience"
+      description: "19+ years of experience"
     },
     {
       icon: <CheckCircle className="h-6 w-6 text-success-green" />,
