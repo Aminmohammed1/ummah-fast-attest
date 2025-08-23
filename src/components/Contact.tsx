@@ -17,26 +17,32 @@ import {
 
 const Contact = () => {
   const [dict, setDict] = useState({
-    full_name: '',
-    phone: '',
-    email: '',
-    service_type: '',
-    country: '',
-    docs_details: ''
+    full_name: "",
+    phone: "",
+    email: "",
+    service_type: "",
+    country: "",
+    docs_details: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     const { name, value } = e.target;
-    setDict(prev => ({
+    setDict((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const openWhatsApp = () => {
     const phoneNumber = "9849720295"; // Replace with your WhatsApp number
     const message = `Name: ${dict.full_name}\nPhone: ${dict.phone}\nEmail: ${dict.email}\nService: ${dict.service_type}\nCountry: ${dict.country}\nDetails: ${dict.docs_details}`;
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
     window.open(url, "_blank");
   };
 
@@ -51,8 +57,8 @@ const Contact = () => {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Contact us today for a free consultation. Our experts are
-            ready to help with all your document attestation needs.
+            Contact us today for a free consultation. Our experts are ready to
+            help with all your document attestation needs.
           </p>
         </div>
 
@@ -158,15 +164,16 @@ const Contact = () => {
                     </p>
                   </div>
                 </div>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.087874988576!2d78.4703767!3d17.40757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb975e90482797%3A0x1bb0d1151948a88e!2sUmmah%20Attestation%20Works!5e0!3m2!1sen!2sin!4v1755878715799!5m2!1sen!2sin"
-                  width="400"
-                  height="300"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+                <div className="w-full overflow-hidden rounded-lg">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.087874988576!2d78.4703767!3d17.40757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb975e90482797%3A0x1bb0d1151948a88e!2sUmmah%20Attestation%20Works!5e0!3m2!1sen!2sin!4v1755878715799!5m2!1sen!2sin"
+                    className="w-full h-64 md:h-72 lg:h-80"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -176,7 +183,8 @@ const Contact = () => {
             <Card className="shadow-elegant">
               <CardHeader>
                 <CardTitle className="text-2xl text-navy">
-                  Send us a message on <span className="text-[#25D366]">Whatsapp</span>
+                  Send us a message on{" "}
+                  <span className="text-[#25D366]">Whatsapp</span>
                 </CardTitle>
                 <p className="text-muted-foreground">
                   Fill out the form below to reach out to us on Whatsapp
@@ -289,8 +297,9 @@ const Contact = () => {
                 </Button>
 
                 <p className="text-sm text-muted-foreground text-center">
-                  By submitting this form, you will open whatsapp with a message containing above entered details.
-                  privacy policy. <br/>We'll contact you within 1 hour.
+                  By submitting this form, you will open whatsapp with a message
+                  containing above entered details. privacy policy. <br />
+                  We'll contact you within 1 hour.
                 </p>
               </CardContent>
             </Card>
