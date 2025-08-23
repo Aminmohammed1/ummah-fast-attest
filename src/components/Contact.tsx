@@ -51,7 +51,7 @@ const Contact = () => {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Contact us today for a free consultation and quote. Our experts are
+            Contact us today for a free consultation. Our experts are
             ready to help with all your document attestation needs.
           </p>
         </div>
@@ -176,11 +176,10 @@ const Contact = () => {
             <Card className="shadow-elegant">
               <CardHeader>
                 <CardTitle className="text-2xl text-navy">
-                  Get Free Quote
+                  Send us a message on <span className="text-[#25D366]">Whatsapp</span>
                 </CardTitle>
                 <p className="text-muted-foreground">
-                  Fill out the form below and we'll get back to you within 1
-                  hour with a detailed quote.
+                  Fill out the form below to reach out to us on Whatsapp
                 </p>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -280,20 +279,19 @@ const Contact = () => {
 
                 <div></div>
                 <Button
-                  className="w-full"
+                  className="w-full bg-[#25D366]"
                   size="lg"
                   variant="hero"
                   onClick={openWhatsApp}
                 >
                   <Send className="h-5 w-5 mr-2" />
-                  Send Request
+                  Send Message
                 </Button>
 
                 <p className="text-sm text-muted-foreground text-center">
-                  By submitting this form, you agree to our terms of service and
-                  privacy policy. We'll contact you within 1 hour.
+                  By submitting this form, you will open whatsapp with a message containing above entered details.
+                  privacy policy. <br/>We'll contact you within 1 hour.
                 </p>
-                <p>Typed text: {dict.docs_details}</p>
               </CardContent>
             </Card>
           </div>
