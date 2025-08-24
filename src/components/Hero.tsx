@@ -2,10 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Clock, Shield, Star, Award } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+// import heroBg from "@/assets/mob-hero.png";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-[80vh] flex items-center bg-gradient-hero">
+    <section id="home" className="relative min-h-[80vh] flex items-center">
       {/* Background overlay */}
       <div 
         className="absolute inset-0 bg-black/60"
@@ -33,8 +34,8 @@ const Hero = () => {
 
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             Hyderabad's Most Trusted
-            <span className="text-gold block">Certificate Attestation</span>
-            Service
+            <span className="text-gold block ">Apostille, Certificate Attestation and Notary</span>
+            Services
           </h1>
 
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
@@ -45,17 +46,23 @@ const Hero = () => {
           {/* Key benefits */}
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <Clock className="h-12 w-12 text-gold mx-auto mb-4" />
+              <Clock className="h-10 w-10 text-gold mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Fastest Processing</h3>
               <p className="text-white/80">Fastest Delivery in the Industry</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <Shield className="h-12 w-12 text-gold mx-auto mb-4" />
+              <Shield className="h-10 w-10 text-gold mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">100% Secure</h3>
               <p className="text-white/80">Government approved process with full document security</p>
             </div>
             <a href="https://www.google.com/search?client=firefox-b-d&sca_esv=ce44fb6aa5ce43e4&sxsrf=AE3TifOvTT8SQEXh6m0v5J3mAzuJ0IlBwQ:1755873260074&si=AMgyJEvkVjFQtirYNBhM3ZJIRTaSJ6PxY6y1_6WZHGInbzDnMTLbI-E3flUowGrt3gyqt9I9A3qptTc5BrIyAsG5-Y-WJYU6NvoE_Zuhdw_XzBFeGoyO-KCX5CECqXA4QyFLnuHwmntm65gEe3AasFLbmJvLevr6hg%3D%3D&q=Ummah+Attestation+Works+Reviews&sa=X&ved=2ahUKEwjwzb_P0Z6PAxUicGwGHbwEGqgQ0bkNegQIHxAD&biw=1485&bih=703&dpr=1.25" target="_blank"><div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <Star className="h-12 w-12 text-gold mx-auto mb-4" />
+              <div className="flex flex-wrap">
+              <Star className="h-10 w-10 text-gold mx-auto mb-4" />
+              <Star className="h-10 w-10 text-gold mx-auto mb-4" />
+              <Star className="h-10 w-10 text-gold mx-auto mb-4" />
+              <Star className="h-10 w-10 text-gold mx-auto mb-4" />
+              <Star className="h-10 w-10 text-gold mx-auto mb-4" />
+              </div>
               <h3 className="text-xl font-semibold mb-2">Highest Rated</h3>
               <p className="text-white/80">5/5 stars from 500+ satisfied customers</p>
             </div>
