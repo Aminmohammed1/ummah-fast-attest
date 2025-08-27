@@ -73,7 +73,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white overflow-x-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 text-primary border-primary">
@@ -81,7 +81,6 @@ const WhyChooseUs = () => {
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-navy">
             Why should you choose us?
-            {/* <span className="text-gold block">Document Attestation</span> */}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             At Ummah Attestation, we specialize in providing reliable and
@@ -111,7 +110,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Main content */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center overflow-hidden">
           <div>
             <div className="grid gap-8">
               {features.map((feature, index) => (
@@ -132,13 +131,13 @@ const WhyChooseUs = () => {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative overflow-hidden">
             <img
               src={trustImage}
               alt="Professional handshake representing trust and partnership"
-              className="rounded-2xl shadow-elegant w-full h-auto"
+              className="rounded-2xl shadow-elegant w-full h-auto max-w-full object-contain"
             />
-            <div className="absolute -bottom-4 -right-4 bg-white p-4 rounded-xl shadow-card">
+            <div className="absolute bottom-4 right-4 bg-white p-4 rounded-xl shadow-card max-w-[90%]">
               <div className="flex items-center gap-2">
                 <Star className="h-5 w-5 text-gold fill-current" />
                 <Star className="h-5 w-5 text-gold fill-current" />
@@ -183,7 +182,6 @@ const WhyChooseUs = () => {
           </div>
         </div>
       </div>
-      {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.087874988576!2d78.4703767!3d17.40757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb975e90482797%3A0x1bb0d1151948a88e!2sUmmah%20Attestation%20Works!5e0!3m2!1sen!2sin!4v1755878658376!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
     </section>
   );
 };
