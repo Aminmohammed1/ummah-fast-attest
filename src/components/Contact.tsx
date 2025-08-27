@@ -82,11 +82,6 @@ const Contact = () => {
                   <span>Sunday</span>
                   <span className="text-muted-foreground">Closed</span>
                 </div>
-                <div className="mt-4 p-3 bg-success-green/10 rounded-lg">
-                  <p className="text-sm text-success-green font-medium">
-                    Emergency services available 24/7 for urgent cases
-                  </p>
-                </div>
               </CardContent>
             </Card>
 
@@ -116,7 +111,7 @@ const Contact = () => {
                       +91 9849720295
                     </a>
                     <p className="text-xs text-success-green mt-1">
-                      Available 24/7
+                      Available During Business Hours Mon - Sat
                     </p>
                   </div>
                 </div>
@@ -133,9 +128,6 @@ const Contact = () => {
                     >
                       ummah.attestation@gmail.com
                     </a>
-                    <p className="text-xs text-success-green mt-1">
-                      Response within 1 hour
-                    </p>
                   </div>
                 </div>
 
@@ -146,9 +138,6 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">WhatsApp</h4>
                     <p className="text-muted-foreground">+91 9849720295</p>
-                    <p className="text-xs text-success-green mt-1">
-                      Instant support
-                    </p>
                   </div>
                 </div>
 
