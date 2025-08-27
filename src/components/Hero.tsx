@@ -2,45 +2,65 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Clock, Shield, Star, Award } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import herobg from "@/assets/hero.png";
 // import heroBg from "@/assets/mob-hero.png";
+import heroBgMobile from "@/assets/tw1.png";
 
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-[80vh] flex items-center">
       {/* Background overlay */}
-      <div 
-        className="absolute inset-0 bg-black/60"
+      <div
+        className="absolute inset-0 bg-black/60 bg-cover bg-center bg-blend-overlay hidden md:block"
         style={{
-          backgroundImage: `url(${heroBg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundBlendMode: 'overlay'
+          backgroundImage: `url(${herobg})`,
         }}
       />
-      
+      <div
+        className="absolute inset-0 bg-black/90 bg-no-repeat md:hidden overflow-hidden"
+        style={{
+          backgroundImage: `url(${heroBgMobile})`,
+          backgroundSize: "contain", // always show the whole image
+        }}
+      />
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* Trust badges */}
           <div className="flex justify-center gap-4 mb-6">
-            <a href="https://www.google.com/search?client=firefox-b-d&sca_esv=ce44fb6aa5ce43e4&sxsrf=AE3TifOvTT8SQEXh6m0v5J3mAzuJ0IlBwQ:1755873260074&si=AMgyJEvkVjFQtirYNBhM3ZJIRTaSJ6PxY6y1_6WZHGInbzDnMTLbI-E3flUowGrt3gyqt9I9A3qptTc5BrIyAsG5-Y-WJYU6NvoE_Zuhdw_XzBFeGoyO-KCX5CECqXA4QyFLnuHwmntm65gEe3AasFLbmJvLevr6hg%3D%3D&q=Ummah+Attestation+Works+Reviews&sa=X&ved=2ahUKEwjwzb_P0Z6PAxUicGwGHbwEGqgQ0bkNegQIHxAD&biw=1485&bih=703&dpr=1.25" target="_blank"><Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-              <Star className="h-4 w-4 mr-1 text-gold" />
-              5/5 Google Reviews
-            </Badge></a>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <a
+              href="https://www.google.com/search?client=firefox-b-d&sca_esv=ce44fb6aa5ce43e4&sxsrf=AE3TifOvTT8SQEXh6m0v5J3mAzuJ0IlBwQ:1755873260074&si=AMgyJEvkVjFQtirYNBhM3ZJIRTaSJ6PxY6y1_6WZHGInbzDnMTLbI-E3flUowGrt3gyqt9I9A3qptTc5BrIyAsG5-Y-WJYU6NvoE_Zuhdw_XzBFeGoyO-KCX5CECqXA4QyFLnuHwmntm65gEe3AasFLbmJvLevr6hg%3D%3D&q=Ummah+Attestation+Works+Reviews&sa=X&ved=2ahUKEwjwzb_P0Z6PAxUicGwGHbwEGqgQ0bkNegQIHxAD&biw=1485&bih=703&dpr=1.25"
+              target="_blank"
+            >
+              <Badge
+                variant="secondary"
+                className="bg-white/20 text-white border-white/30"
+              >
+                <Star className="h-4 w-4 mr-1 text-gold" />
+                5/5 Google Reviews
+              </Badge>
+            </a>
+            <Badge
+              variant="secondary"
+              className="bg-white/20 text-white border-white/30"
+            >
               <Award className="h-4 w-4 mr-1 text-gold" />
               19+ Years Experience
             </Badge>
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-[clamp(2rem,5vw,3.5rem)] md:text-[clamp(2.5rem,4vw,4rem)] font-bold mb-6 leading-tight">
             Hyderabad's Most Trusted
-            <span className="text-gold block ">Apostille, Certificate Attestation and Notary</span>
+            <span className="text-gold block">
+              Apostille, Certificate Attestation and Notary
+            </span>
             Services
           </h1>
 
-          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-            Professional document attestation services with the fastest processing time in Hyderabad. 
-            Trusted by thousands, rated highest on Google reviews.
+          <p className="text-[clamp(1rem,2.5vw,1.5rem)] md:text-[clamp(1.25rem,2vw,1.75rem)] mb-8 text-white/90 max-w-3xl mx-auto">
+            Professional document attestation services with the fastest
+            processing time in Hyderabad. Trusted by thousands, rated highest on
+            Google reviews.
           </p>
 
           {/* Key benefits */}
@@ -53,34 +73,40 @@ const Hero = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <Shield className="h-10 w-10 text-gold mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">100% Secure</h3>
-              <p className="text-white/80">Government approved process with full document security</p>
+              <p className="text-white/80">
+                Government approved process with full document security
+              </p>
             </div>
-            <a href="https://www.google.com/search?client=firefox-b-d&sca_esv=ce44fb6aa5ce43e4&sxsrf=AE3TifOvTT8SQEXh6m0v5J3mAzuJ0IlBwQ:1755873260074&si=AMgyJEvkVjFQtirYNBhM3ZJIRTaSJ6PxY6y1_6WZHGInbzDnMTLbI-E3flUowGrt3gyqt9I9A3qptTc5BrIyAsG5-Y-WJYU6NvoE_Zuhdw_XzBFeGoyO-KCX5CECqXA4QyFLnuHwmntm65gEe3AasFLbmJvLevr6hg%3D%3D&q=Ummah+Attestation+Works+Reviews&sa=X&ved=2ahUKEwjwzb_P0Z6PAxUicGwGHbwEGqgQ0bkNegQIHxAD&biw=1485&bih=703&dpr=1.25" target="_blank"><div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <div className="flex flex-wrap">
-              <Star className="h-10 w-10 text-gold mx-auto mb-4" />
-              <Star className="h-10 w-10 text-gold mx-auto mb-4" />
-              <Star className="h-10 w-10 text-gold mx-auto mb-4" />
-              <Star className="h-10 w-10 text-gold mx-auto mb-4" />
-              <Star className="h-10 w-10 text-gold mx-auto mb-4" />
+            <a
+              href="https://www.google.com/search?client=firefox-b-d&sca_esv=ce44fb6aa5ce43e4&sxsrf=AE3TifOvTT8SQEXh6m0v5J3mAzuJ0IlBwQ:1755873260074&si=AMgyJEvkVjFQtirYNBhM3ZJIRTaSJ6PxY6y1_6WZHGInbzDnMTLbI-E3flUowGrt3gyqt9I9A3qptTc5BrIyAsG5-Y-WJYU6NvoE_Zuhdw_XzBFeGoyO-KCX5CECqXA4QyFLnuHwmntm65gEe3AasFLbmJvLevr6hg%3D%3D&q=Ummah+Attestation+Works+Reviews&sa=X&ved=2ahUKEwjwzb_P0Z6PAxUicGwGHbwEGqgQ0bkNegQIHxAD&biw=1485&bih=703&dpr=1.25"
+              target="_blank"
+            >
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+                <div className="flex justify-center flex-wrap gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-6 w-6 text-gold" />
+                  ))}
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Highest Rated</h3>
+                <p className="text-white/80">
+                  5/5 stars from 500+ satisfied customers
+                </p>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Highest Rated</h3>
-              <p className="text-white/80">5/5 stars from 500+ satisfied customers</p>
-            </div>
             </a>
           </div>
 
           {/* Call to action */}
           {/* <div className="flex flex-col sm:flex-row gap-4 justify-center"> */}
-            {/* <Button variant="gold" size="lg" className="text-lg px-8 py-4">
+          {/* <Button variant="gold" size="lg" className="text-lg px-8 py-4">
               Get Free Quote
             </Button> */}
-            {/* <a href="#services"><Button variant="trust" size="lg" className="text-lg px-8 py-4">
+          {/* <a href="#services"><Button variant="trust" size="lg" className="text-lg px-8 py-4">
               View Our Services
             </Button></a> */}
-          </div>
+        </div>
 
-          {/* Trust indicators */}
-          {/* <div className="mt-12 pt-8 border-t border-white/20">
+        {/* Trust indicators */}
+        {/* <div className="mt-12 pt-8 border-t border-white/20">
             <p className="text-white/80 mb-4">Trusted by leading organizations:</p>
             <div className="flex justify-center items-center gap-8 text-white/60">
               <span>Emirates Airlines</span>
