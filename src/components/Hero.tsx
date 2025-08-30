@@ -11,7 +11,7 @@ const Hero = () => {
     <section id="home" className="relative min-h-[80vh] flex items-center">
       {/* Background overlay */}
       <div
-        className="absolute inset-0 bg-black/60 bg-cover bg-center bg-blend-overlay hidden md:block"
+        className="absolute inset-0 bg-black/60 bg-cover bg-blend-overlay hidden md:block"
         style={{
           backgroundImage: `url(${herobg})`,
         }}
@@ -51,7 +51,7 @@ const Hero = () => {
 
           <h1 className="text-[clamp(2rem,5vw,3.5rem)] md:text-[clamp(2.5rem,4vw,4rem)] font-bold mb-6 leading-tight">
             Hyderabad's Most Trusted
-            <span className="text-gold block">
+            <span className="text-gold block [text-shadow:2px_2px_4px_rgba(0,0,0,0.6)]">
               Apostille, Certificate Attestation and Notary
             </span>
             Services

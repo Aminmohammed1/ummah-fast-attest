@@ -8,7 +8,6 @@ import {
   Building, 
   Heart, 
   Briefcase,
-  Clock,
   CheckCircle
 } from "lucide-react";
 
@@ -17,7 +16,7 @@ const Services = () => {
     {
       icon: <GraduationCap className="h-8 w-8 text-primary" />,
       title: "Educational Certificates",
-      description: "Degree, Diploma, Transcripts Attestation Apostille for UAE, Saudi Arabia, Qatar, and other GCC countries.",
+      description: "Degree, Diploma, Transcripts Apostille, GAD, HRD, MEA Attestation for UAE, Saudi Arabia, Qatar, and other GCC countries.",
       features: ["University Degrees", "School Certificates", "Transcripts", "work experience letters"]
     },
     {

@@ -11,7 +11,7 @@ import review6 from "@/assets/review6.png";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Mohd Asif",
+      name: "Asif's testimonial",
       // role: "Customer",
       // location: "Hyderabad",
       rating: 5,
@@ -21,7 +21,7 @@ const Testimonials = () => {
       img : review1
     },
     {
-      // name: "Sarah Johnson",
+      name: "Qureshi's testimonial",
       // role: "HR Manager",
       // location: "Abu Dhabi",
       // rating: 5,
@@ -31,7 +31,7 @@ const Testimonials = () => {
       img : review2
     },
     {
-      // name: "Dr. Mohammed Hassan",
+      name: "Omer's testimonial",
       // role: "Medical Professional",
       // location: "Sharjah",
       // rating: 5,
@@ -41,7 +41,7 @@ const Testimonials = () => {
       img : review3
     },
     {
-      // name: "Priya Sharma",
+      name: "Abhinand's testimonial",
       // role: "Software Engineer",
       // location: "Dubai",
       // rating: 5,
@@ -51,7 +51,7 @@ const Testimonials = () => {
       img : review4
     },
     {
-      // name: "Ali Al-Mansoori",
+      name: "Karthik's testimonial",
       // role: "Project Manager",
       // location: "Dubai",
       // rating: 5,
@@ -61,7 +61,7 @@ const Testimonials = () => {
       img : review5
     },
     {
-      // name: "Maria Rodriguez",
+      name: "Raju's testimonial",
       // role: "Teacher",
       // location: "Al Ain",
       // rating: 5,
@@ -149,7 +149,6 @@ const Testimonials = () => {
                   <Badge variant="secondary" className="text-xs">
                     Verified Review
                   </Badge>
-                  <span className="text-xs text-muted-foreground">{testimonial.date}</span>
                 </div>
               </CardContent>
             </Card>

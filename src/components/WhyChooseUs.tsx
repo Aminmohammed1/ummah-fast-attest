@@ -73,14 +73,14 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="py-20 bg-white overflow-x-hidden">
+    <section id="about" className="py-20 bg-white overflow-x-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 text-primary border-primary">
             Why Choose Us
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-navy">
-            Why should you choose us?
+            Why should you choose Ummah Attestation Works?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             At Ummah Attestation, we specialize in providing reliable and

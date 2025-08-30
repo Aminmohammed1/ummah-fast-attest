@@ -1,10 +1,10 @@
 import React from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaPhoneAlt } from 'react-icons/fa';
 
 const WhatsappButton: React.FC = () => {
   const phoneNumber = '9849720295';
   const message = "Hi I'm interested in your services.";
-  const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+  const url = `tel:${phoneNumber}`;
 
   return (
     <a
@@ -28,7 +28,7 @@ const WhatsappButton: React.FC = () => {
         cursor: 'pointer',
       }}
     >
-      <FaWhatsapp />
+      <FaPhoneAlt />
     </a>
   );
 };

@@ -76,7 +76,7 @@ const Contact = () => {
               <CardContent className="space-y-2">
                 <div className="flex justify-between">
                   <span>Monday - Saturday</span>
-                  <span className="font-medium">9:00 AM - 7:00 PM</span>
+                  <span className="font-medium">10:00 AM - 7:00 PM</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Sunday</span>
@@ -161,6 +161,7 @@ const Contact = () => {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
+                    title="Attestation works near me | Ummah Attestation Works location in Hyderabad"
                   />
                 </div>
               </div>

@@ -47,7 +47,6 @@ const Footer = () => {
               <li><a href="#about" className="text-white/80 hover:text-gold transition-colors">About Us</a></li>
               <li><a href="#testimonials" className="text-white/80 hover:text-gold transition-colors">Reviews</a></li>
               <li><a href="#contact" className="text-white/80 hover:text-gold transition-colors">Contact</a></li>
-              <li><a href="#" className="text-white/80 hover:text-gold transition-colors">Track Document</a></li>
             </ul>
           </div>
 
@@ -92,7 +91,7 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <Clock className="h-5 w-5 text-gold mt-0.5" />
                 <div>
-                  <p className="text-white/80">Mon-Sat: 9:00 AM - 7:00 PM</p>
+                  <p className="text-white/80">Mon-Sat: 10:00 AM - 7:00 PM</p>
                 </div>
               </div>
             </div>
