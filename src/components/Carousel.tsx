@@ -11,6 +11,7 @@ import insideStore from "@/assets/inside.jpg"
 import flags from "@/assets/flags.jpg"
 import apostille from "@/assets/apostille.jpg"
 import azizBhai from "@/assets/aziz_bhai_with_angrez.jpg"
+import pressImage1 from "@/assets/press_image1.jpg"
 const Carousel: React.FC = () => {
   const autoplay = useRef(
     Autoplay({ delay: 5000, stopOnInteraction: true }) // 3s autoplay
@@ -28,6 +29,7 @@ const Carousel: React.FC = () => {
     apostille,
     storeFront,
     articleMention,
+    pressImage1,
     news_article,
     namePlate,
     insideStore,

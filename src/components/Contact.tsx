@@ -10,9 +10,7 @@ import {
   MapPin,
   Clock,
   MessageCircle,
-  Send,
-  Car,
-  Building,
+  Send
 } from "lucide-react";
 
 const Contact = () => {
@@ -25,6 +23,12 @@ const Contact = () => {
     docs_details: "",
   });
 
+  const [errors, setErrors] = useState({
+    full_name: "",
+    phone: "",
+    service_type: "",
+  });
+
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -35,6 +39,35 @@ const Contact = () => {
       ...prev,
       [name]: value,
     }));
+    setErrors((prev) => ({ ...prev, [name]: "" }));
+  };
+
+  
+  const validateForm = () => {
+    let newErrors = { full_name: "", phone: "", service_type: "" };
+    let isValid = true;
+
+    if (!dict.full_name.trim()) {
+      newErrors.full_name = "Full name is required";
+      isValid = false;
+    }
+    if (!dict.phone.trim()) {
+      newErrors.phone = "Phone number is required";
+      isValid = false;
+    }
+    if (!dict.service_type || dict.service_type === "Select service type") {
+      newErrors.service_type = "Please select a service type";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
+  
+  const handleSubmit = () => {
+    if (!validateForm()) return;
+    openWhatsApp();
   };
 
   const openWhatsApp = () => {
@@ -193,6 +226,9 @@ const Contact = () => {
                       value={dict.full_name}
                       onChange={handleChange}
                     />
+                    {errors.full_name && (
+                      <p className="text-red-500 text-sm">{errors.full_name}</p>
+                    )}
                   </div>
                   <div>
                     <label className="text-sm font-medium mb-2 block">
@@ -205,6 +241,9 @@ const Contact = () => {
                       value={dict.phone}
                       onChange={handleChange}
                     />
+                    {errors.phone && (
+                      <p className="text-red-500 text-sm">{errors.phone}</p>
+                    )}
                   </div>
                 </div>
 
@@ -240,6 +279,11 @@ const Contact = () => {
                       <option>Embassy Attestation</option>
                       <option>Family Visa Documents</option>
                     </select>
+                    {errors.service_type && (
+                      <p className="text-red-500 text-sm">
+                        {errors.service_type}
+                      </p>
+                    )}
                   </div>
                   <div>
                     <label className="text-sm font-medium mb-2 block">
@@ -280,7 +324,7 @@ const Contact = () => {
                   className="w-full bg-[#25D366]"
                   size="lg"
                   variant="hero"
-                  onClick={openWhatsApp}
+                  onClick={handleSubmit}
                 >
                   <Send className="h-5 w-5 mr-2" />
                   Send Message
