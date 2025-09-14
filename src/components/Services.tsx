@@ -16,7 +16,7 @@ const Services = () => {
     {
       icon: <GraduationCap className="h-8 w-8 text-primary" />,
       title: "Educational Certificates",
-      description: "Degree, Diploma, Transcripts Apostille, GAD, HRD, MEA Attestation for UAE, Saudi Arabia, Qatar, and other GCC countries.",
+      description: "Degree, Diploma, Transcripts Attestation Apostille for UAE, Kuwait visa stamping, Saudi Arabia, Qatar, and other GCC countries .",
       features: ["University Degrees", "School Certificates", "Transcripts", "work experience letters"]
     },
     {
@@ -39,7 +39,7 @@ const Services = () => {
     },
     {
       icon: <Building className="h-8 w-8 text-primary" />,
-      title: "Embassy Attestation",
+      title: "Embassy Apostille and Attestation",
       description: "Complete embassy attestation services for all GCC and international destinations.",
       features: ["UAE Embassy", "Saudi Embassy", "Qatar Embassy", "Other Embassies"]
     },
@@ -103,7 +103,7 @@ const Services = () => {
               { step: "1", title: "Submit Documents", desc: "Drop off your documents at our office or schedule pickup" },
               { step: "2", title: "Verification", desc: "We verify and prepare your documents for attestation" },
               { step: "3", title: "Processing", desc: "Documents processed through official government channels" },
-              { step: "4", title: "Delivery", desc: "Receive your attested documents with tracking" }
+              { step: "4", title: "Delivery", desc: "Receive your attested documents" }
             ].map((item, index) => (
               <div key={index} className="text-center">
                 <div className="mx-auto mb-4 w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center text-white font-bold text-lg">
