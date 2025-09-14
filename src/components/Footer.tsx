@@ -22,8 +22,8 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-6">
               <div className="text-gold font-arabic text-2xl font-bold"></div>
               <div>
-                <h3 className="text-xl font-bold">Ummah Attestation</h3>
-                <p className="text-white/80 text-sm">Trusted Document Services</p>
+                <h3 className="text-xl font-bold">Ummah Attestation Works</h3>
+                <p className="text-white/80 text-sm">Trusted Apostille services for all Embassies <br></br>(UAE, Saudi, Qatar, Kuwait)</p>
               </div>
             </div>
             <p className="text-white/80 mb-6">
@@ -58,7 +58,7 @@ const Footer = () => {
               <li><a href="#" className="text-white/80 hover:text-gold transition-colors">Personal Documents</a></li>
               <li><a href="#" className="text-white/80 hover:text-gold transition-colors">Commercial Documents</a></li>
               <li><a href="#" className="text-white/80 hover:text-gold transition-colors">Medical Certificates</a></li>
-              <li><a href="#" className="text-white/80 hover:text-gold transition-colors">Embassy Attestation</a></li>
+              <li><a href="#" className="text-white/80 hover:text-gold transition-colors">Embassy Apostille and Attestation</a></li>
               <li><a href="#" className="text-white/80 hover:text-gold transition-colors">Family Visa Documents</a></li>
             </ul>
           </div>

@@ -7,6 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
+    allowedHosts: ["iii-payday-structure-culture.trycloudflare.com"],
     port: 8080,
   },
   plugins: [

@@ -4,7 +4,8 @@ import { Clock, Shield, Star, Award } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import herobg from "@/assets/hero.png";
 // import heroBg from "@/assets/mob-hero.png";
-import heroBgMobile from "@/assets/tw1.png";
+// import heroBgMobile from "@/assets/tw1.png";
+import heroBgMobile from "@/assets/hero.png";
 
 const Hero = () => {
   return (
