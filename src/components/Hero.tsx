@@ -23,7 +23,7 @@ const Hero = () => {
         <img
           src={heroBgMobile}
           alt="Mobile Hero Background"
-          className="w-full h-[40vh] object-center object-cover"
+          className="w-full h-[18rem] object-center object-cover"
         />
       </div>
 
@@ -52,13 +52,17 @@ const Hero = () => {
             </Badge>
           </div>
 
-          <h1 className="text-[clamp(2rem,5vw,3.5rem)] md:text-[clamp(2.5rem,4vw,4rem)] font-bold mb-6 leading-tight">
-            Hyderabad's Most Trusted
-            <span className="text-gold block [text-shadow:2px_2px_4px_rgba(0,0,0,0.6)]">
-              Apostille and Certificate Attestation
-            </span>
-            Services(UAE, Saudi, Qatar, Kuwait etc..)
-          </h1>
+          <div className="flex flex-col justify-center items-center px-4 text-center text-white h-[18rem]">
+  <h1 className="text-[6.5vw] md:text-[2.7rem] font-bold leading-snug max-w-xl">
+    Hyderabad's Most Trusted
+    <span className="text-gold block [text-shadow:2px_2px_4px_rgba(0,0,0,0.6)]">
+      Apostille and Certificate Attestation
+    </span>
+    Services (UAE, Saudi, Qatar, Kuwait etc..)
+  </h1>
+</div>
+
+
 
           {/* <p className="text-[clamp(1rem,2.5vw,1.5rem)] md:text-[clamp(1.25rem,2vw,1.75rem)] mb-8 text-white/90 max-w-3xl mx-auto">
             Professional document attestation services with the fastest
