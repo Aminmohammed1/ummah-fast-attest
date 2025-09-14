@@ -84,7 +84,7 @@ const WhyChooseUs = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             At Ummah Attestation, we specialize in providing reliable and
-            professional Notary and Embassy attestation services. With a team of
+            professional Embassy attestation services. With a team of
             highly experienced legal experts, we not only process your
             attestations with precision but also offer expert legal guidance to
             ensure all your requirements are met efficiently and accurately.

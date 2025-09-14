@@ -9,20 +9,22 @@ import heroBgMobile from "@/assets/tw1.png";
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-[80vh] flex items-center">
-      {/* Background overlay */}
+      {/* Background overlay for desktop */}
       <div
         className="absolute inset-0 bg-black/60 bg-cover bg-blend-overlay hidden md:block"
         style={{
           backgroundImage: `url(${herobg})`,
         }}
       />
-      <div
-        className="absolute inset-0 bg-black/90 bg-no-repeat md:hidden overflow-hidden"
-        style={{
-          backgroundImage: `url(${heroBgMobile})`,
-          backgroundSize: "contain", // always show the whole image
-        }}
-      />
+
+      {/* Background overlay for mobile */}
+      <div className="absolute inset-0 bg-black/90 bg-no-repeat md:hidden overflow-hidden">
+        <img
+          src={heroBgMobile}
+          alt="Mobile Hero Background"
+          className="w-full h-[40vh] object-center object-cover"
+        />
+      </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">
@@ -52,15 +54,21 @@ const Hero = () => {
           <h1 className="text-[clamp(2rem,5vw,3.5rem)] md:text-[clamp(2.5rem,4vw,4rem)] font-bold mb-6 leading-tight">
             Hyderabad's Most Trusted
             <span className="text-gold block [text-shadow:2px_2px_4px_rgba(0,0,0,0.6)]">
-              Apostille, Certificate Attestation and Notary
+              Apostille and Certificate Attestation
             </span>
-            Services
+            Services(UAE, Saudi, Qatar, Kuwait etc..)
           </h1>
 
-          <p className="text-[clamp(1rem,2.5vw,1.5rem)] md:text-[clamp(1.25rem,2vw,1.75rem)] mb-8 text-white/90 max-w-3xl mx-auto">
+          {/* <p className="text-[clamp(1rem,2.5vw,1.5rem)] md:text-[clamp(1.25rem,2vw,1.75rem)] mb-8 text-white/90 max-w-3xl mx-auto">
             Professional document attestation services with the fastest
             processing time in Hyderabad. Trusted by thousands, rated highest on
             Google reviews.
+          </p> */}
+          <p className="text-[clamp(1rem,2.5vw,1.5rem)] md:text-[clamp(1.25rem,2vw,1.75rem)] mb-8 text-white/90 max-w-3xl mx-auto">
+            Have your documents legally verified and certified by our team of
+            experienced legal experts: Mr. Abdul Aziz BA.L LL.M (PGD-PM&IR) –
+            (Advocate & Proprietor); Mr. M.A. Khadeer B.Com LLB; Mrs. Prasanna
+            B.Com LLB (LL.M)
           </p>
 
           {/* Key benefits */}

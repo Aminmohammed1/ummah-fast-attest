@@ -43,12 +43,14 @@ const Header = () => {
           <div className="flex items-center justify-between py-4">
             <div className="flex items-center gap-3">
               <div>
+                <a href="/">
                 <h1 className="text-xl font-bold text-black">
                   Ummah Attestation Works
                 </h1>
                 <p className="text-sm text-blue mt-1">
                   Apostille. Embassy Attestations.
                 </p>
+                </a>
               </div>
             </div>
 
