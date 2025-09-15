@@ -70,9 +70,8 @@ const Hero = () => {
           </p> */}
           <p className="text-[clamp(1rem,2.5vw,1.5rem)] md:text-[clamp(1.25rem,2vw,1.75rem)] mb-8 text-white/90 max-w-3xl mx-auto">
             Have your documents legally verified and certified by our team of
-            experienced legal experts: Mr. Abdul Aziz BA.L LL.M (PGD-PM&IR) –
-            (Advocate & Proprietor); Mr. M.A. Khadeer B.Com LLB; Mrs. Prasanna
-            B.Com LLB (LL.M)
+            experienced legal experts : Mr. Abdul Aziz B.A.L L.L.M (PGD-PM&IR) –
+            (Advocate) and Associates.
           </p>
 
           {/* Key benefits */}
